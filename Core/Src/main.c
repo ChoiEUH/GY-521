@@ -175,7 +175,7 @@ int main(void)
    MPU_Read_ACCEL();
    MPU_Read_Gyro();
 
-   sprintf(uart_buf,"ACCEL_X = %.2f,ACCEL_Y = %.2f,ACCEL_Z = %.2f\r\n, Gyro_X = %.2f, Gyro_X = %.2f, Gyro_X = %.2f\r\n, ",X_Accel,Y_Accel,Z_Accel,X_Gyro,Y_Gyro,Z_Gyro);
+   sprintf(uart_buf,"AX = %.2f,AY = %.2f,AZ = %.2f\r\n, GX = %.2f, GY = %.2f, GZ = %.2f\r\n, ",X_Accel,Y_Accel,Z_Accel,X_Gyro,Y_Gyro,Z_Gyro);
 
 
    HAL_UART_Transmit(&huart3,uart_buf,sizeof(uart_buf),0xFFFF);
